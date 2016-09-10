@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<h3>all posts</h3>
+<ul>
+{{- range .Data.Pages.ByWeight }}{{ if eq .Section "post" }}
+  <li class="post-item">
+    <a href="{{ .Permalink }}"><div>{{ .Title }}</div></a>
+  </li>
+{{ end }}{{ end -}}
+</ul>
+{{ partial "footer.html" . }}

@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<h2>{{ .Title }}</h2>
+
+<hr>
+
+{{ .Content }}
+
+<hr>
+
+<a href="/">Home</a>
+
+<script src="//cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{{ partial "footer.html" . }}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>{{ if eq $.Section "post" }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+<style>
+  body {
+    font-family: Helvetica Neue, Arial;
+    padding: 0 20px 30px;
+  }
+  a {
+    color: #1e0cdb;
+  }
+  a:visited {
+    color: #1a0dab;
+  }
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+  }
+</style>
+{{ if eq $.Section "post" }}<link href="//cdn.bootcss.com/highlight.js/9.6.0/styles/atom-one-light.min.css" rel="stylesheet">
+{{ end -}}
+</head>
+
+<body>
+
+<div class="wrapper">

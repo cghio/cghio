@@ -1,0 +1,12 @@
+name = "CGH"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.15
+
+[author]
+  name = "Cai Guanhao"
+  homepage = "https://github.com/caiguanhao"
